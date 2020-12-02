@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/splash"
+        android:layout_width="354dp"
+        android:layout_height="387dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/icget" />
+
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="STOP WATCH BY DARKLORD"
+        android:textColor="#FFF"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="@+id/splash"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="@+id/splash"
+        app:layout_constraintTop_toBottomOf="@+id/splash" />
+
+    <TextView
+        android:id="@+id/subquaote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Time is Every thing"
+        android:textSize="18dp"
+        android:textColor="#A3A2AD"
+        app:layout_constraintEnd_toEndOf="@+id/quote"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/quote"
+        app:layout_constraintTop_toBottomOf="@+id/quote" />
+
+    <Button
+        android:id="@+id/intostopwatch"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="96dp"
+        android:text="GET STARTED"
+        android:textSize="20sp"
+        android:textColor="#FFF"
+        android:textAllCaps="false"
+        android:background="@drawable/bgbuttongreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/subquaote"
+        app:layout_constraintStart_toStartOf="@+id/subquaote" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
