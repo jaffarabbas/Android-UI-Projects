@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/splash"
+        android:id="@+id/bgImage"
         android:layout_width="354dp"
         android:layout_height="387dp"
         android:scaleType="centerCrop"
@@ -29,10 +29,10 @@
         android:text="STOP WATCH BY DARKLORD"
         android:textColor="#FFF"
         android:textSize="23dp"
-        app:layout_constraintEnd_toEndOf="@+id/splash"
+        app:layout_constraintEnd_toEndOf="@+id/bgImage"
         app:layout_constraintHorizontal_bias="0.404"
-        app:layout_constraintStart_toStartOf="@+id/splash"
-        app:layout_constraintTop_toBottomOf="@+id/splash" />
+        app:layout_constraintStart_toStartOf="@+id/bgImage"
+        app:layout_constraintTop_toBottomOf="@+id/bgImage" />
 
     <TextView
         android:id="@+id/subquaote"
@@ -48,6 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/quote" />
 
     <Button
+        android:background="@drawable/bgbuttongreen"
         android:id="@+id/intostopwatch"
         android:layout_width="280dp"
         android:layout_height="55dp"
@@ -56,7 +57,6 @@
         android:textSize="20sp"
         android:textColor="#FFF"
         android:textAllCaps="false"
-        android:background="@drawable/bgbuttongreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/subquaote"
         app:layout_constraintStart_toStartOf="@+id/subquaote" />

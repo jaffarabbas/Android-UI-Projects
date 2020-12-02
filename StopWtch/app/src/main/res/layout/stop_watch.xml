@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".StopWatch">
+
+
+    <ImageView
+        android:id="@+id/watchBg"
+        android:layout_width="276dp"
+        android:layout_height="247dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgcircle" />
+
+    <ImageView
+        android:id="@+id/WatchScroller"
+        android:layout_width="358dp"
+        android:layout_height="357dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icanchor" />
+
+    <Chronometer
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="62sp"
+        app:layout_constraintBottom_toTopOf="@+id/StartWatch"
+        app:layout_constraintEnd_toEndOf="@+id/StartWatch"
+        app:layout_constraintStart_toStartOf="@+id/StartWatch"
+        app:layout_constraintTop_toBottomOf="@+id/WatchScroller" />
+
+    <Button
+        android:id="@+id/StartWatch"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bgbuttongreen"
+        android:text="Start Now"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/watchBg"
+        app:layout_constraintVertical_bias="0.805" />
+
+    <Button
+        android:id="@+id/StopWatch"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:text="Stop Now"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:background="@drawable/bgbuttonred"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/StartWatch"
+        app:layout_constraintStart_toStartOf="@+id/StartWatch"
+        app:layout_constraintTop_toBottomOf="@+id/StartWatch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
